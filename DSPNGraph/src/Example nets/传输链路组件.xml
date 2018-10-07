@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Black" enabled="true" red="0" green="0" blue="0"/>
+<token id="Green" enabled="true" red="0" green="255" blue="0"/>
+<token id="Red" enabled="true" red="255" green="0" blue="0"/>
+<place id="SPM1_L0_LinkBusy">
+<graphics>
+<position x="570.0" y="180.0"/>
+</graphics>
+<name>
+<value>SPM1_L0_LinkBusy</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_L0_LinkIdle">
+<graphics>
+<position x="570.0" y="390.0"/>
+</graphics>
+<name>
+<value>SPM1_L0_LinkIdle</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Application">
+<graphics>
+<position x="180.0" y="1440.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Application</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Buffer">
+<graphics>
+<position x="915.0" y="1530.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Buffer</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Loss">
+<graphics>
+<position x="810.0" y="1440.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Loss</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Queue">
+<graphics>
+<position x="915.0" y="1665.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Queue</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Sampling_port">
+<graphics>
+<position x="495.0" y="1440.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Sampling_port</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Schedule">
+<graphics>
+<position x="720.0" y="1650.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Schedule</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Send">
+<graphics>
+<position x="1020.0" y="1725.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Send</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Wait1">
+<graphics>
+<position x="120.0" y="1605.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Wait1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_Wait2">
+<graphics>
+<position x="405.0" y="1650.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Wait2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="SPM1_Par3_Vl0_WaitPeriod">
+<graphics>
+<position x="675.0" y="1725.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_WaitPeriod</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="SPM1_L0_EndTrans">
+<graphics>
+<position x="675.0" y="285.0"/>
+</graphics>
+<name>
+<value>SPM1_L0_EndTrans</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>1.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_L0_StartTrans">
+<graphics>
+<position x="450.0" y="285.0"/>
+</graphics>
+<name>
+<value>SPM1_L0_StartTrans</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_Enqueue">
+<graphics>
+<position x="810.0" y="1590.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Enqueue</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_Jitter">
+<graphics>
+<position x="570.0" y="1650.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Jitter</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>6133.464180569186</value>
+</rate>
+<type>
+<value>1</value>
+</type>
+<delay>
+<value>1.6303999999999998E-4</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_Period">
+<graphics>
+<position x="315.0" y="1440.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_Period</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>1.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_TechLatency">
+<graphics>
+<position x="1020.0" y="1590.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_TechLatency</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>0.15</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>0.15</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_TLoss">
+<graphics>
+<position x="645.0" y="1440.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_TLoss</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_TransPeriod">
+<graphics>
+<position x="885.0" y="1725.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_TransPeriod</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>100.0</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>100.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="SPM1_Par3_Vl0_VL-BAG">
+<graphics>
+<position x="240.0" y="1650.0"/>
+</graphics>
+<name>
+<value>SPM1_Par3_Vl0_VL-BAG</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>1.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="SPM1_L0_EndTrans to SPM1_L0_LinkIdle" source="SPM1_L0_EndTrans" target="SPM1_L0_LinkIdle">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="681" y="302" curvePoint="false"/>
+<arcpath id="001" x="592" y="391" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_L0_LinkBusy to SPM1_L0_EndTrans" source="SPM1_L0_LinkBusy" target="SPM1_L0_EndTrans">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="592" y="202" curvePoint="false"/>
+<arcpath id="001" x="682" y="292" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_L0_LinkIdle to SPM1_L0_StartTrans" source="SPM1_L0_LinkIdle" target="SPM1_L0_StartTrans">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="570" y="392" curvePoint="false"/>
+<arcpath id="001" x="466" y="302" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_L0_StartTrans to SPM1_L0_LinkBusy" source="SPM1_L0_StartTrans" target="SPM1_L0_LinkBusy">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="467" y="292" curvePoint="false"/>
+<arcpath id="001" x="570" y="201" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Application to SPM1_Par3_Vl0_Period" source="SPM1_Par3_Vl0_Application" target="SPM1_Par3_Vl0_Period">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="206" y="1452" curvePoint="false"/>
+<arcpath id="001" x="321" y="1457" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Buffer to SPM1_Par3_Vl0_Enqueue" source="SPM1_Par3_Vl0_Buffer" target="SPM1_Par3_Vl0_Enqueue">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="914" y="1549" curvePoint="false"/>
+<arcpath id="001" x="827" y="1597" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Buffer to SPM1_Par3_Vl0_TLoss" source="SPM1_Par3_Vl0_Buffer" target="SPM1_Par3_Vl0_TLoss">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="912" y="1537" curvePoint="false"/>
+<arcpath id="001" x="661" y="1457" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Enqueue to SPM1_Par3_Vl0_Queue" source="SPM1_Par3_Vl0_Enqueue" target="SPM1_Par3_Vl0_Queue">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="826" y="1607" curvePoint="false"/>
+<arcpath id="001" x="914" y="1668" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Enqueue to SPM1_Par3_Vl0_Wait1" source="SPM1_Par3_Vl0_Enqueue" target="SPM1_Par3_Vl0_Wait1">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="816" y="1603" curvePoint="false"/>
+<arcpath id="001" x="146" y="1616" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Jitter to SPM1_Par3_Vl0_Schedule" source="SPM1_Par3_Vl0_Jitter" target="SPM1_Par3_Vl0_Schedule">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="586" y="1662" curvePoint="false"/>
+<arcpath id="001" x="717" y="1662" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Period to SPM1_Par3_Vl0_Application" source="SPM1_Par3_Vl0_Period" target="SPM1_Par3_Vl0_Application">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="322" y="1447" curvePoint="false"/>
+<arcpath id="001" x="206" y="1451" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Period to SPM1_Par3_Vl0_Sampling_port" source="SPM1_Par3_Vl0_Period" target="SPM1_Par3_Vl0_Sampling_port">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="331" y="1452" curvePoint="false"/>
+<arcpath id="001" x="492" y="1452" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Queue to SPM1_Par3_Vl0_TechLatency" source="SPM1_Par3_Vl0_Queue" target="SPM1_Par3_Vl0_TechLatency">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="939" y="1668" curvePoint="false"/>
+<arcpath id="001" x="1026" y="1607" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Sampling_port to SPM1_Par3_Vl0_Enqueue" source="SPM1_Par3_Vl0_Sampling_port" target="SPM1_Par3_Vl0_Enqueue">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="520" y="1458" curvePoint="false"/>
+<arcpath id="001" x="817" y="1596" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Sampling_port to SPM1_Par3_Vl0_TLoss" source="SPM1_Par3_Vl0_Sampling_port" target="SPM1_Par3_Vl0_TLoss">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="521" y="1452" curvePoint="false"/>
+<arcpath id="001" x="651" y="1452" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Schedule to SPM1_Par3_Vl0_Enqueue" source="SPM1_Par3_Vl0_Schedule" target="SPM1_Par3_Vl0_Enqueue">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="744" y="1654" curvePoint="false"/>
+<arcpath id="001" x="816" y="1610" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Send to SPM1_Par3_Vl0_TechLatency" source="SPM1_Par3_Vl0_Send" target="SPM1_Par3_Vl0_TechLatency">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1032" y="1722" curvePoint="false"/>
+<arcpath id="001" x="1032" y="1617" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_TechLatency to SPM1_Par3_Vl0_Buffer" source="SPM1_Par3_Vl0_TechLatency" target="SPM1_Par3_Vl0_Buffer">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1027" y="1597" curvePoint="false"/>
+<arcpath id="001" x="940" y="1549" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_TLoss to SPM1_Par3_Vl0_Loss" source="SPM1_Par3_Vl0_TLoss" target="SPM1_Par3_Vl0_Loss">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="662" y="1447" curvePoint="false"/>
+<arcpath id="001" x="807" y="1451" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_TransPeriod to SPM1_Par3_Vl0_Send" source="SPM1_Par3_Vl0_TransPeriod" target="SPM1_Par3_Vl0_Send">
+<graphics/>
+<inscription>
+<value>Black,50</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="901" y="1737" curvePoint="false"/>
+<arcpath id="001" x="1017" y="1737" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_TransPeriod to SPM1_Par3_Vl0_WaitPeriod" source="SPM1_Par3_Vl0_TransPeriod" target="SPM1_Par3_Vl0_WaitPeriod">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="892" y="1732" curvePoint="false"/>
+<arcpath id="001" x="701" y="1737" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_VL-BAG to SPM1_Par3_Vl0_Wait2" source="SPM1_Par3_Vl0_VL-BAG" target="SPM1_Par3_Vl0_Wait2">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="256" y="1662" curvePoint="false"/>
+<arcpath id="001" x="402" y="1662" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Wait1 to SPM1_Par3_Vl0_VL-BAG" source="SPM1_Par3_Vl0_Wait1" target="SPM1_Par3_Vl0_VL-BAG">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="145" y="1622" curvePoint="false"/>
+<arcpath id="001" x="246" y="1662" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_Wait2 to SPM1_Par3_Vl0_Jitter" source="SPM1_Par3_Vl0_Wait2" target="SPM1_Par3_Vl0_Jitter">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="431" y="1662" curvePoint="false"/>
+<arcpath id="001" x="576" y="1662" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="SPM1_Par3_Vl0_WaitPeriod to SPM1_Par3_Vl0_TransPeriod" source="SPM1_Par3_Vl0_WaitPeriod" target="SPM1_Par3_Vl0_TransPeriod">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="701" y="1737" curvePoint="false"/>
+<arcpath id="001" x="891" y="1742" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

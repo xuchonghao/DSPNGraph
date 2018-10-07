@@ -1,0 +1,79 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa48c9b5ee, pid=4140, tid=0x00000000000021b8
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_131-b11) (build 1.8.0_131-b11)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  [MSVCP120.dll+0xb5ee]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001e1c8000):  JavaThread "AWT-EventQueue-0" [_thread_in_native, id=8632, stack(0x000000001ec40000,0x000000001ed40000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x000000000000000a
+
+Registers:
+RAX=0x0000000000000002, RBX=0x000000001ed38728, RCX=0x0000000022a95420, RDX=0x000000001ed38728
+RSP=0x000000001ed38650, RBP=0x000000000000001a, RSI=0x0000000000000001, RDI=0x0000000000000000
+R8 =0x0000000000000010, R9 =0x0000000000008000, R10=0x0000000022a8cac0, R11=0x000000001ed384c0
+R12=0x0000000000000038, R13=0xffffffffffffffff, R14=0x0000000022a29a20, R15=0x000000002266d260
+RIP=0x00007ffa48c9b5ee, EFLAGS=0x0000000000010206
+
+Top of Stack: (sp=0x000000001ed38650)
+0x000000001ed38650:   0000000000000001 00007ffa3cbd1f12
+0x000000001ed38660:   fffffffffffffffe 000000000000001a
+0x000000001ed38670:   00007ffa48d28b10 00007ffa48caac34
+0x000000001ed38680:   000000001ed386b8 00007ffa48d28b10
+0x000000001ed38690:   0000000000000000 000000002274e000
+0x000000001ed386a0:   0000000000000000 0000000022726ca0
+0x000000001ed386b0:   fffffffffffffffe 00007ffa48d28b10
+0x000000001ed386c0:   cccccccccccccc01 0000000000000014
+0x000000001ed386d0:   cccccccccccccccc 000000000000005a
+0x000000001ed386e0:   cccccccc00000004 cccccccccccccccc
+0x000000001ed386f0:   0000000022a29a20 0000000022a95360
+0x000000001ed38700:   000000002274eae0 00007ffa3cbd13c1
+0x000000001ed38710:   00007ffa48d28b10 0000000000000000
+0x000000001ed38720:   0000000000000000 0000000022a95420
+0x000000001ed38730:   0000000000000000 0000000000000000
+0x000000001ed38740:   0000000000000000 000000001ed38788 
+
+Instructions: (pc=0x00007ffa48c9b5ee)
+0x00007ffa48c9b5ce:   41 28 48 89 51 28 c3 cc cc cc 40 53 48 83 ec 20
+0x00007ffa48c9b5de:   48 8b 41 40 48 8b da 48 8b 08 48 89 0a 48 8b 01
+0x00007ffa48c9b5ee:   ff 50 08 48 8b c3 48 83 c4 20 5b c3 cc cc 48 8b
+0x00007ffa48c9b5fe:   c4 48 89 50 10 41 56 48 83 ec 30 48 c7 40 f0 fe 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000002 is an unknown value
+RBX=0x000000001ed38728 is pointing into the stack for thread: 0x000000001e1c8000
+RCX=0x0000000022a95420 is an unknown value
+RDX=0x000000001ed38728 is pointing into the stack for thread: 0x000000001e1c8000
+RSP=0x000000001ed38650 is pointing into the stack for thread: 0x000000001e1c8000
+RBP=0x000000000000001a is an unknown value
+RSI=0x0000000000000001 is an unknown value
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000000000010 is an unknown value
+R9 =0x0000000000008000 is an unknown value
+R10=0x0000000022a8cac0 is an unknown value
+R11=0x000000001ed384c0 is pointing into the stack for thread: 0x000000001e1c8000
+R12=0x0000000000000038 is an unknown value
+R13=0xffffffffffffffff is an unknown value
+R14=0x0000000022a29a20 is an unknown value
+R15=0x000000002266d260 is an unknown value
+
+
+Stack: [0x000000001ec40000,0x000000001ed40000],  sp=0x000000001ed38650,  free space=993k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [MSVCP120.dll+0xb5ee]

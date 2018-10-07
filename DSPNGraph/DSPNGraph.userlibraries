@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="jdom">
+    <archive path="D:/Code/git/MyProject/DSPNGraph/lib/jdom.jar" />
+  </library>
+</eclipse-userlibraries>
+

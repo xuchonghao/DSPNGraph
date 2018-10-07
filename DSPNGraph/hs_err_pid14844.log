@@ -1,0 +1,82 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff8814881a2, pid=14844, tid=0x00000000000029f0
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_131-b11) (build 1.8.0_131-b11)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  [MSVCP120.dll+0x281a2]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001e36b800):  JavaThread "AWT-EventQueue-0" [_thread_in_native, id=10736, stack(0x000000001ee40000,0x000000001ef40000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x000000000000003c
+
+Registers:
+RAX=0x0000000000000004, RBX=0x0000000000000000, RCX=0x000000002293aed0, RDX=0x000000001ef38660
+RSP=0x000000001ef38500, RBP=0x000000001ef385b1, RSI=0x0000000000000001, RDI=0x000000001ef38660
+R8 =0x000000001ef38661, R9 =0x000000001ef38570, R10=0x0000000000000000, R11=0x000000001ef38560
+R12=0x000000002293aed0, R13=0x00000000225ff130, R14=0x00007ff8814f8b20, R15=0x000000001ef38640
+RIP=0x00007ff8814881a2, EFLAGS=0x0000000000010287
+
+Top of Stack: (sp=0x000000001ef38500)
+0x000000001ef38500:   0000000000000000 0000000000000001
+0x000000001ef38510:   000000002293aed0 0000000000000000
+0x000000001ef38520:   0000000000000000 00007ff885bfd32c
+0x000000001ef38530:   000000001ef38620 000000000000003e
+0x000000001ef38540:   000000002293a810 0000000000000042
+0x000000001ef38550:   0000000000000000 0000000000000000
+0x000000001ef38560:   000000001ef38730 fffffffffffffffe
+0x000000001ef38570:   0000000000000000 00007ff885b53b84
+0x000000001ef38580:   0000000000000001 000000000000000f
+0x000000001ef38590:   00007ff8814f8b20 000000001ef38778
+0x000000001ef385a0:   0000000000000000 000000001ef38618
+0x000000001ef385b0:   0000bc935126df29 00007ff885b51bcb
+0x000000001ef385c0:   0000000022359960 00000000225ff130
+0x000000001ef385d0:   ffffffffffffffff 0000000000000080
+0x000000001ef385e0:   00007ff8814f8b20 000000001ef38730
+0x000000001ef385f0:   000000000000003b 00007ff88148f1bc 
+
+Instructions: (pc=0x00007ff8814881a2)
+0x00007ff881488182:   91 fe ff 90 4c 8d 4d bf 48 83 7d d7 10 4c 0f 43
+0x00007ff881488192:   4d bf 49 8b 04 24 4c 8d 04 3e 48 8b d7 49 8b cc
+0x00007ff8814881a2:   ff 50 38 48 8d 55 8f 49 8b ce e8 27 34 fe ff 90
+0x00007ff8814881b2:   48 8b c8 e8 ba bb fe ff 4c 8b e0 48 8b 4d 8f 48 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000004 is an unknown value
+RBX=0x0000000000000000 is an unknown value
+RCX=0x000000002293aed0 is an unknown value
+RDX=0x000000001ef38660 is pointing into the stack for thread: 0x000000001e36b800
+RSP=0x000000001ef38500 is pointing into the stack for thread: 0x000000001e36b800
+RBP=0x000000001ef385b1 is pointing into the stack for thread: 0x000000001e36b800
+RSI=0x0000000000000001 is an unknown value
+RDI=0x000000001ef38660 is pointing into the stack for thread: 0x000000001e36b800
+R8 =0x000000001ef38661 is pointing into the stack for thread: 0x000000001e36b800
+R9 =0x000000001ef38570 is pointing into the stack for thread: 0x000000001e36b800
+R10=0x0000000000000000 is an unknown value
+R11=0x000000001ef38560 is pointing into the stack for thread: 0x000000001e36b800
+R12=0x000000002293aed0 is an unknown value
+R13=0x00000000225ff130 is an unknown value
+R14=0x00007ff8814f8b20 is an unknown value
+R15=0x000000001ef38640 is pointing into the stack for thread: 0x000000001e36b800
+
+
+Stack: [0x000000001ee40000,0x000000001ef40000],  sp=0x000000001ef38500,  free space=993k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [MSVCP120.dll+0x281a2]
+C  [MSVCP120.dll+0x2f1bc]
+C  [MSVCP120.dll+0x1aca7]
+C  [METISCJAVA.dll+0x13c1]  DLL_API_METIS_PartGraphKway+0x151

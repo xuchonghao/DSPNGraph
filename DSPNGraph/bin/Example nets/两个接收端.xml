@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="RES1_InQueue">
+<graphics>
+<position x="3075.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_InQueue</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par1_GetResources">
+<graphics>
+<position x="3855.0" y="375.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_GetResources</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par1_LoseResourcesP">
+<graphics>
+<position x="3525.0" y="375.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_LoseResourcesP</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par1_Receiption">
+<graphics>
+<position x="4005.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_Receiption</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par1_VL0_CommunicationPort">
+<graphics>
+<position x="3675.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_VL0_CommunicationPort</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par1_VL0_IPStack">
+<graphics>
+<position x="3315.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_VL0_IPStack</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par1_Wait">
+<graphics>
+<position x="4095.0" y="375.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_Wait</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par2_GetResources">
+<graphics>
+<position x="3855.0" y="525.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_GetResources</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par2_LoseResourcesP">
+<graphics>
+<position x="3525.0" y="525.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_LoseResourcesP</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par2_Receiption">
+<graphics>
+<position x="4005.0" y="465.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_Receiption</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par2_VL1_CommunicationPort">
+<graphics>
+<position x="3675.0" y="465.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_VL1_CommunicationPort</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par2_VL1_IPStack">
+<graphics>
+<position x="3315.0" y="465.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_VL1_IPStack</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_Par2_Wait">
+<graphics>
+<position x="4095.0" y="525.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_Wait</value>
+<graphics>
+<offset x="70.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="RES1_Par1_LoseResourcesT">
+<graphics>
+<position x="3675.0" y="375.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_LoseResourcesT</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par1_SchedulePeriod">
+<graphics>
+<position x="4005.0" y="375.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_SchedulePeriod</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>100.0</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>100.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par1_VL0_Assemble">
+<graphics>
+<position x="3480.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_VL0_Assemble</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par1_VL0_RM">
+<graphics>
+<position x="3180.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_VL0_RM</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>400.0</value>
+</rate>
+<type>
+<value>1</value>
+</type>
+<delay>
+<value>0.0025</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par1_VL0_TenchLatency">
+<graphics>
+<position x="3855.0" y="315.0"/>
+</graphics>
+<name>
+<value>RES1_Par1_VL0_TenchLatency</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>0.15</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>0.15</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par2_LoseResourcesT">
+<graphics>
+<position x="3675.0" y="525.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_LoseResourcesT</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par2_SchedulePeriod">
+<graphics>
+<position x="4005.0" y="525.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_SchedulePeriod</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>100.0</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>100.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par2_VL1_Assemble">
+<graphics>
+<position x="3480.0" y="465.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_VL1_Assemble</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<type>
+<value>0</value>
+</type>
+<delay>
+<value>0.0</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par2_VL1_RM">
+<graphics>
+<position x="3180.0" y="465.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_VL1_RM</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>400.0</value>
+</rate>
+<type>
+<value>1</value>
+</type>
+<delay>
+<value>0.0025</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_Par2_VL1_TenchLatency">
+<graphics>
+<position x="3855.0" y="465.0"/>
+</graphics>
+<name>
+<value>RES1_Par2_VL1_TenchLatency</value>
+<graphics>
+<offset x="70.0" y="50.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>0.15</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>0.15</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="RES1_InQueue to RES1_Par1_VL0_RM" source="RES1_InQueue" target="RES1_Par1_VL0_RM">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3100" y="326" curvePoint="false"/>
+<arcpath id="001" x="3185" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_InQueue to RES1_Par2_VL1_RM" source="RES1_InQueue" target="RES1_Par2_VL1_RM">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3093" y="338" curvePoint="false"/>
+<arcpath id="001" x="3185" y="476" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_GetResources to RES1_Par1_LoseResourcesT" source="RES1_Par1_GetResources" target="RES1_Par1_LoseResourcesT">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3851" y="386" curvePoint="false"/>
+<arcpath id="001" x="3690" y="386" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_GetResources to RES1_Par1_VL0_TenchLatency" source="RES1_Par1_GetResources" target="RES1_Par1_VL0_TenchLatency">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3866" y="371" curvePoint="false"/>
+<arcpath id="001" x="3866" y="341" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_LoseResourcesT to RES1_Par1_LoseResourcesP" source="RES1_Par1_LoseResourcesT" target="RES1_Par1_LoseResourcesP">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3680" y="386" curvePoint="false"/>
+<arcpath id="001" x="3550" y="386" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_SchedulePeriod to RES1_Par1_GetResources" source="RES1_Par1_SchedulePeriod" target="RES1_Par1_GetResources">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="4010" y="386" curvePoint="false"/>
+<arcpath id="001" x="3880" y="386" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_SchedulePeriod to RES1_Par1_Wait" source="RES1_Par1_SchedulePeriod" target="RES1_Par1_Wait">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="4021" y="381" curvePoint="false"/>
+<arcpath id="001" x="4050" y="353" curvePoint="true"/>
+<arcpath id="002" x="4092" y="378" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_VL0_Assemble to RES1_Par1_VL0_CommunicationPort" source="RES1_Par1_VL0_Assemble" target="RES1_Par1_VL0_CommunicationPort">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3495" y="326" curvePoint="false"/>
+<arcpath id="001" x="3671" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_VL0_CommunicationPort to RES1_Par1_LoseResourcesT" source="RES1_Par1_VL0_CommunicationPort" target="RES1_Par1_LoseResourcesT">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="3686" y="340" curvePoint="false"/>
+<arcpath id="001" x="3686" y="371" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="RES1_Par1_VL0_CommunicationPort to RES1_Par1_VL0_TenchLatency" source="RES1_Par1_VL0_CommunicationPort" target="RES1_Par1_VL0_TenchLatency">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3701" y="326" curvePoint="false"/>
+<arcpath id="001" x="3860" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_VL0_IPStack to RES1_Par1_VL0_Assemble" source="RES1_Par1_VL0_IPStack" target="RES1_Par1_VL0_Assemble">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3340" y="326" curvePoint="false"/>
+<arcpath id="001" x="3485" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_VL0_RM to RES1_Par1_VL0_IPStack" source="RES1_Par1_VL0_RM" target="RES1_Par1_VL0_IPStack">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3195" y="326" curvePoint="false"/>
+<arcpath id="001" x="3311" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_VL0_TenchLatency to RES1_Par1_GetResources" source="RES1_Par1_VL0_TenchLatency" target="RES1_Par1_GetResources">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3866" y="341" curvePoint="false"/>
+<arcpath id="001" x="3866" y="371" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_VL0_TenchLatency to RES1_Par1_Receiption" source="RES1_Par1_VL0_TenchLatency" target="RES1_Par1_Receiption">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3870" y="326" curvePoint="false"/>
+<arcpath id="001" x="4001" y="326" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par1_Wait to RES1_Par1_SchedulePeriod" source="RES1_Par1_Wait" target="RES1_Par1_SchedulePeriod">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="4091" y="386" curvePoint="false"/>
+<arcpath id="001" x="4020" y="391" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_GetResources to RES1_Par2_LoseResourcesT" source="RES1_Par2_GetResources" target="RES1_Par2_LoseResourcesT">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3851" y="536" curvePoint="false"/>
+<arcpath id="001" x="3690" y="536" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_GetResources to RES1_Par2_VL1_TenchLatency" source="RES1_Par2_GetResources" target="RES1_Par2_VL1_TenchLatency">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3866" y="521" curvePoint="false"/>
+<arcpath id="001" x="3866" y="491" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_LoseResourcesT to RES1_Par2_LoseResourcesP" source="RES1_Par2_LoseResourcesT" target="RES1_Par2_LoseResourcesP">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3680" y="536" curvePoint="false"/>
+<arcpath id="001" x="3550" y="536" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_SchedulePeriod to RES1_Par2_GetResources" source="RES1_Par2_SchedulePeriod" target="RES1_Par2_GetResources">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="4010" y="536" curvePoint="false"/>
+<arcpath id="001" x="3880" y="536" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_SchedulePeriod to RES1_Par2_Wait" source="RES1_Par2_SchedulePeriod" target="RES1_Par2_Wait">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="4021" y="531" curvePoint="false"/>
+<arcpath id="001" x="4050" y="503" curvePoint="true"/>
+<arcpath id="002" x="4092" y="528" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_VL1_Assemble to RES1_Par2_VL1_CommunicationPort" source="RES1_Par2_VL1_Assemble" target="RES1_Par2_VL1_CommunicationPort">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3495" y="476" curvePoint="false"/>
+<arcpath id="001" x="3671" y="476" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_VL1_CommunicationPort to RES1_Par2_LoseResourcesT" source="RES1_Par2_VL1_CommunicationPort" target="RES1_Par2_LoseResourcesT">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="3686" y="490" curvePoint="false"/>
+<arcpath id="001" x="3686" y="521" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="RES1_Par2_VL1_CommunicationPort to RES1_Par2_VL1_TenchLatency" source="RES1_Par2_VL1_CommunicationPort" target="RES1_Par2_VL1_TenchLatency">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3701" y="476" curvePoint="false"/>
+<arcpath id="001" x="3860" y="476" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_VL1_IPStack to RES1_Par2_VL1_Assemble" source="RES1_Par2_VL1_IPStack" target="RES1_Par2_VL1_Assemble">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3340" y="476" curvePoint="false"/>
+<arcpath id="001" x="3485" y="476" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_VL1_RM to RES1_Par2_VL1_IPStack" source="RES1_Par2_VL1_RM" target="RES1_Par2_VL1_IPStack">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3195" y="476" curvePoint="false"/>
+<arcpath id="001" x="3311" y="476" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_VL1_TenchLatency to RES1_Par2_GetResources" source="RES1_Par2_VL1_TenchLatency" target="RES1_Par2_GetResources">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3866" y="491" curvePoint="false"/>
+<arcpath id="001" x="3866" y="521" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_VL1_TenchLatency to RES1_Par2_Receiption" source="RES1_Par2_VL1_TenchLatency" target="RES1_Par2_Receiption">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="3870" y="476" curvePoint="false"/>
+<arcpath id="001" x="4001" y="476" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_Par2_Wait to RES1_Par2_SchedulePeriod" source="RES1_Par2_Wait" target="RES1_Par2_SchedulePeriod">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="4091" y="536" curvePoint="false"/>
+<arcpath id="001" x="4020" y="541" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
